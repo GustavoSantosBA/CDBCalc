@@ -11,19 +11,19 @@ namespace CDBCalc_Application.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class CdbCalcController : ControllerBase
     {
         private readonly IMethodServices _methodServices;
 
-        public WeatherForecastController(IMethodServices methodServices)
+        public CdbCalcController(IMethodServices methodServices)
         {
             _methodServices = methodServices;
         }
 
-        [HttpGet]
-        public IActionResult Get()
+        [HttpGet("calculateNetValue")]
+        public IActionResult Get([FromQuery] decimal presentValue, int period)
         {
-            var result = _methodServices.CalculateNetValue(100, 10);
+            var result = _methodServices.CalculateNetValue(presentValue, period);
             return Ok(result);
         }
     }

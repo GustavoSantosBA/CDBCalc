@@ -9,22 +9,29 @@ using System.Threading.Tasks;
 namespace CDBCalc_Services.Services
 {
     public class MethodServices : IMethodServices
-    { 
+    {
         public decimal CalculateNetValue(decimal presentValue, int period)
         {
             BasicParms parms = new BasicParms();
 
-            if (ValueGreaterThan0(presentValue) && PeriodLongerThan1(period))
+            if (!ValueGreaterThan0(presentValue))
             {
-                parms.PresentValue = presentValue;
-                for (int i = 0; i < period; i++)
-                {
-                    parms.FutureValue = CalculateFutureValue(parms);
-                    parms.PresentValue = parms.FutureValue;
-                }
+                return 0;
             }
-            
-            parms.NetValue = (parms.FutureValue - (parms.FutureValue * (CalculatePercTaxes(period))));
+
+            if (!PeriodLongerThan1(period))
+            {
+                return 0;
+            }
+
+            parms.PresentValue = presentValue;
+            for (int i = 0; i < period; i++)
+            {
+                parms.FutureValue = CalculateFutureValue(parms);
+                parms.PresentValue = parms.FutureValue;
+            }
+
+            parms.NetValue = Math.Round(parms.FutureValue - (parms.FutureValue * (CalculatePercTaxes(period))), 2);
 
             return parms.NetValue;
         }
@@ -38,7 +45,7 @@ namespace CDBCalc_Services.Services
         {
             decimal fv = 0;
             fv = parms.PresentValue * (1 + (parms.CDI * parms.TB));
-            return fv;
+            return Math.Round(fv,2);
         }
 
         /// <summary>
