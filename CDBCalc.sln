@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{8EDBD1AC-0F6B-405D-A3C0-021808F11D56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{8169D4C3-0C2E-4949-97F9-7AD0DA1A7ACB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Services", "3 - Services", "{6A927535-5D10-4CC0-AA26-58608D58D71C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{24EC03ED-9E5D-4AFA-AF70-A0656B8A990E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - UnitTests", "4.1 - UnitTests", "{C1FC3305-DA2B-4390-8EBA-201B4317C271}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Presentation", "5 - Presentation", "{086C5AB1-327C-4C4B-B9E1-B8848B140FDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDBCalc_Domain", "CDBCalc_Domain\CDBCalc_Domain.csproj", "{D9400844-BE5D-4CAE-87D9-4B4E22414F18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDBCalc_Services", "CDBCalc_Services\CDBCalc_Services.csproj", "{3455592D-415D-44EB-8226-780020558E3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDBCalc_Application", "CDBCalc_Application\CDBCalc_Application.csproj", "{C50DC3AE-3903-4DC6-A010-A094245B0B87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9400844-BE5D-4CAE-87D9-4B4E22414F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9400844-BE5D-4CAE-87D9-4B4E22414F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9400844-BE5D-4CAE-87D9-4B4E22414F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9400844-BE5D-4CAE-87D9-4B4E22414F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3455592D-415D-44EB-8226-780020558E3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3455592D-415D-44EB-8226-780020558E3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3455592D-415D-44EB-8226-780020558E3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3455592D-415D-44EB-8226-780020558E3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50DC3AE-3903-4DC6-A010-A094245B0B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50DC3AE-3903-4DC6-A010-A094245B0B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50DC3AE-3903-4DC6-A010-A094245B0B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50DC3AE-3903-4DC6-A010-A094245B0B87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1FC3305-DA2B-4390-8EBA-201B4317C271} = {24EC03ED-9E5D-4AFA-AF70-A0656B8A990E}
+		{D9400844-BE5D-4CAE-87D9-4B4E22414F18} = {8169D4C3-0C2E-4949-97F9-7AD0DA1A7ACB}
+		{3455592D-415D-44EB-8226-780020558E3F} = {6A927535-5D10-4CC0-AA26-58608D58D71C}
+		{C50DC3AE-3903-4DC6-A010-A094245B0B87} = {8EDBD1AC-0F6B-405D-A3C0-021808F11D56}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4BB56F26-CFE0-4628-AFFC-7F80BA5A7359}
+	EndGlobalSection
+EndGlobal

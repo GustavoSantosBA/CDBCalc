@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CDBCalc_Domain\CDBCalc_Domain.csproj" />
+    <ProjectReference Include="..\CDBCalc_Services\CDBCalc_Services.csproj" />
+  </ItemGroup>
+
+</Project>
