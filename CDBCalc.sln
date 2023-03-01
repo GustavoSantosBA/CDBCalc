@@ -14,6 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - UnitTests", "4.1 - UnitTests", "{C1FC3305-DA2B-4390-8EBA-201B4317C271}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Presentation", "5 - Presentation", "{086C5AB1-327C-4C4B-B9E1-B8848B140FDF}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Gustavo Santos\Desktop\readme.mk = C:\Users\Gustavo Santos\Desktop\readme.mk
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CDBCalc_Domain", "CDBCalc_Domain\CDBCalc_Domain.csproj", "{D9400844-BE5D-4CAE-87D9-4B4E22414F18}"
 EndProject
@@ -26,6 +29,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8398378-9ADB-4549-A9C5-17EC7F6E70DF}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		C:\Users\Gustavo Santos\Desktop\readme.mk = C:\Users\Gustavo Santos\Desktop\readme.mk
 	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "CDBCalc_Presentation", "CDBCalc_Presentation\CDBCalc_Presentation.esproj", "{AA7CC043-5C19-4548-9BE0-B0F372750A75}"
