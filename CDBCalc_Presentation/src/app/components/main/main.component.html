@@ -3,7 +3,7 @@
     <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
       <div class="d-flex flex-center flex-column flex-lg-row-fluid">
         <div class="w-lg-500px p-10">
-          <div novalidate="novalidate">
+          <div novalidate="novalidate" [formGroup]="form">
             <div class="text-center mb-11">
               <img src="/assets/media/logos/CDB Calc.png" style="height:150px"/>
               <div class="text-gray-500 fw-semibold fs-6">Seja bem vindo!</div>
@@ -11,16 +11,19 @@
             <div class="separator separator-content my-14">
             </div>
             <div class="fv-row mb-8">
-              <input type="text" placeholder="Valor Presente" name="email" autocomplete="off" class="form-control bg-transparent" />
+              <input type="text" placeholder="Valor Presente" formControlName="presentValue" autocomplete="off" class="form-control bg-transparent" />
             </div>
             <div class="fv-row mb-3">
-              <input type="password" placeholder="Quantidade de meses" name="password" autocomplete="off" class="form-control bg-transparent" />
+              <input type="text" placeholder="Quantidade de meses" formControlName="period" autocomplete="off" class="form-control bg-transparent" />
             </div>
             <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
               <div></div>
             </div>
             <div class="d-grid mb-10">
               <button class="btn btn-primary" (click)="onGetData()"> Calcular ?</button>
+            </div>
+            <div class="fv-row mb-3">
+              <h2 style="text-align: center;">{{result}}</h2>
             </div>
           </div>
         </div>
