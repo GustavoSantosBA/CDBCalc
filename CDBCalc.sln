@@ -26,10 +26,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8398378-9ADB-4549-A9C5-17EC7F6E70DF}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		C:\Users\Gustavo Santos\Desktop\readme.mk = C:\Users\Gustavo Santos\Desktop\readme.mk
 	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "CDBCalc_Presentation", "CDBCalc_Presentation\CDBCalc_Presentation.esproj", "{AA7CC043-5C19-4548-9BE0-B0F372750A75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instruções de uso", "Instruções de uso", "{55C2E00A-1C39-4EF3-8344-E769A0D29004}"
+	ProjectSection(SolutionItems) = preProject
+		readme.mk = readme.mk
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
