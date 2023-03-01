@@ -28,7 +28,7 @@ export class MainComponent implements OnInit {
   
   onGetData() {
     this.serviceCalc.calcData(this.form.value.presentValue, this.form.value.period).subscribe({
-      next : (r) => {
+        next: (r) => {
         this.result = `O resultado é: R$ ${r}`;
       },
       error : (err) => {
