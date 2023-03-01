@@ -1,0 +1,41 @@
+<div class="d-flex flex-column flex-root" style="height:100vh">
+  <div class="d-flex flex-column flex-lg-row flex-column-fluid">
+    <div class="d-flex flex-column flex-lg-row-fluid w-lg-50 p-10 order-2 order-lg-1">
+      <div class="d-flex flex-center flex-column flex-lg-row-fluid">
+        <div class="w-lg-500px p-10">
+          <div novalidate="novalidate">
+            <div class="text-center mb-11">
+              <img src="/assets/media/logos/CDB Calc.png" style="height:150px"/>
+              <div class="text-gray-500 fw-semibold fs-6">Seja bem vindo!</div>
+            </div>
+            <div class="separator separator-content my-14">
+            </div>
+            <div class="fv-row mb-8">
+              <input type="text" placeholder="Valor Presente" name="email" autocomplete="off" class="form-control bg-transparent" />
+            </div>
+            <div class="fv-row mb-3">
+              <input type="password" placeholder="Quantidade de meses" name="password" autocomplete="off" class="form-control bg-transparent" />
+            </div>
+            <div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
+              <div></div>
+            </div>
+            <div class="d-grid mb-10">
+              <button class="btn btn-primary" (click)="onGetData()"> Calcular ?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-lg-row-fluid w-lg-50 bgi-size-cover bgi-position-center order-1 order-lg-2" style="background-image: url(assets/media/misc/auth-bg.png)">
+      <div class="d-flex flex-column flex-center py-7 py-lg-15 px-5 px-md-15 w-100">
+        <img class="d-none d-lg-block mx-auto w-275px w-md-50 w-xl-500px mb-10 mb-lg-20" src="assets/media/misc/auth-screens.png" alt="" />
+        <h1 class="d-none d-lg-block text-white fs-2qx fw-bolder text-center mb-7">Calcule o rendimento da CDB</h1>
+        <div class="d-none d-lg-block text-white fs-base text-center">
+           Calcule o rendimento do CDB com prazo superior a 1 mês
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
