@@ -15,4 +15,7 @@ export class CalcService {
     return this.http.get<string>(`${this.baseUrl}?presentValue=${presentValue}&period=${period}`);
   }
 
+  getReport() : Observable<any> {
+    return this.http.get<any>(this.baseUrl);
+  }
 }
